@@ -17,8 +17,6 @@
     "iet-ou/open-media-player-core": "dev-master"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "~2.1.0",
-    "jakub-onderka/php-parallel-lint": "~0.8",
     "phpunit/phpunit": "~4.0"
   },
   "autoload": {
@@ -31,12 +29,5 @@
       "type": "vcs",
       "url": "https://github.com/IET-OU/open-media-player-core"
     }
-  ],
-  "scripts": {
-    "test": [
-      "composer validate --no-interaction",
-      "parallel-lint lib/*",
-      "phpcs --standard=./phpcs.xml -n --encoding=utf-8 --extensions=php lib/*"
-    ]
-  }
+  ]
 }
